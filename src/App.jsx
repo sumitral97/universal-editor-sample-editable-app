@@ -9,6 +9,7 @@ import About from "./components/About";
 import {getAuthorHost, getProtocol, getService} from "./utils/fetchData";
 import logo from "./images/wknd-logo-dk.svg";
 import "./App.scss";
+import HelloUE from "./components/demo/HelloUE";
 
 const NavMenu = () => (
   <nav>
@@ -50,6 +51,7 @@ function App() {
           <Header />
           <hr/>
           <main>
+            <HelloUE />
             <Routes>
               <Route path="/adventure/:slug" element={<AdventureDetail />} />
               <Route path="/articles" element={<Articles />} />
